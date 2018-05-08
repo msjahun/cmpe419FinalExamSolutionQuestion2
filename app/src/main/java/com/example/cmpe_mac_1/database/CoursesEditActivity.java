@@ -1,5 +1,6 @@
 package com.example.cmpe_mac_1.database;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -55,6 +56,10 @@ public class CoursesEditActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 getAllRecord();
+                Intent intent = new Intent(CoursesEditActivity.this, CoursesListActivity.class);
+                intent.putExtra("CoursesArray",studentsList );
+                startActivity(intent);
+
 
             }
         });
