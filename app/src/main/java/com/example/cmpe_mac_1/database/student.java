@@ -8,11 +8,13 @@ import java.io.Serializable;
 
 public class student implements Serializable {
     private String studentNumber;
-    private String studentGrade;
+    private String studentName;
+    private String studentSurname;
 
-    public student(String studentNumber, String studentGrade) {
+    public student(String studentNumber, String studentName, String studentSurname) {
         this.studentNumber = studentNumber;
-        this.studentGrade = studentGrade;
+        this.studentName = studentName;
+        this.studentSurname = studentSurname;
     }
 
     public String getStudentNumber() {
@@ -23,11 +25,19 @@ public class student implements Serializable {
         this.studentNumber = studentNumber;
     }
 
-    public String getStudentGrade() {
-        return studentGrade;
+    public String getStudentName() {
+        return studentName;
     }
 
-    public void setStudentGrade(String studentGrade) {
-        this.studentGrade = studentGrade;
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getStudentSurname() {
+        return studentSurname;
+    }
+
+    public void setStudentSurname(String studentSurname) {
+        this.studentSurname = studentSurname;
     }
 }

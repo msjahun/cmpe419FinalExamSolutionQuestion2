@@ -19,15 +19,15 @@ public class coursesDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("CREATE TABLE CMPE419(number TEXT, grade TEXT);");
-        db.execSQL("CREATE TABLE CMPE538(number TEXT, grade TEXT);");
+        db.execSQL("CREATE TABLE CMPE419(studentNumber TEXT, studentName TEXT, studentSurname TEXT );");
+        db.execSQL("CREATE TABLE CMPE416(studentNumber TEXT, studentName TEXT, studentSurname TEXT );");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXIST CMPE419");
-        db.execSQL("DROP TABLE IF EXIST CMPE538");
+        db.execSQL("DROP TABLE IF EXIST CMPE416");
 
         onCreate(db);
 

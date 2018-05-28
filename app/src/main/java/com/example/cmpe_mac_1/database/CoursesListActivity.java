@@ -20,6 +20,8 @@ public class CoursesListActivity extends AppCompatActivity {
         ArrayList<String> array = (ArrayList<String>)bundle.getStringArrayList("CoursesArray");
 
 
+
+
         listall=(ListView)findViewById(R.id.listView);
 
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,array);

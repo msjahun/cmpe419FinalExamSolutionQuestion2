@@ -4,68 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cmpe_mac_1.database.CoursesEditActivity">
+    tools:context="com.example.cmpe_mac_1.cmpeq2final147824.MainActivity">
+
 
     <TextView
-        android:id="@+id/textViewCourseName"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="23dp"
-        android:layout_toStartOf="@+id/buttonListAll"
-        android:text="CourseName" />
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="33dp"
+        android:text="Course Enrolment" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:text="Course" />
+
+    <Spinner
+        android:id="@+id/spinnerCourseList"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textViewCourseName"
-        android:layout_marginEnd="71dp"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_alignTop="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/spinnerCourseList"
+        android:layout_marginTop="36dp"
+        android:text="Student NO." />
 
     <EditText
-        android:id="@+id/editTextGrade"
+        android:id="@+id/editTextStudentNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextNumber"
-        android:layout_below="@+id/editTextNumber"
-        android:layout_marginTop="49dp"
+        android:layout_alignStart="@+id/spinnerCourseList"
+        android:layout_below="@+id/spinnerCourseList"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextGrade"
-        android:layout_alignParentStart="true"
-        android:text="Number" />
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/editTextStudentNumber"
+        android:layout_marginTop="59dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextStudentNumber"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonAdd"
-        android:layout_alignParentStart="true"
-        android:text="Grade" />
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/editTextStudentName"
+        android:layout_marginTop="47dp"
+        android:text="Surname" />
+
+    <EditText
+        android:id="@+id/editTextStudentSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextStudentName"
+        android:layout_alignTop="@+id/textView5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <Button
-        android:id="@+id/buttonAdd"
+        android:id="@+id/buttonAddToDB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextGrade"
-        android:layout_marginTop="79dp"
-        android:layout_toStartOf="@+id/editTextGrade"
-        android:text="Add" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="37dp"
+        android:text="Add to Database" />
 
     <Button
-        android:id="@+id/buttonListAll"
+        android:id="@+id/buttonList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonAdd"
-        android:layout_alignEnd="@+id/editTextGrade"
-        android:text="List ALL" />
+        android:layout_alignTop="@+id/buttonAddToDB"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="List" />
 </RelativeLayout>
